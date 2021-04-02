@@ -1,0 +1,19 @@
+block variables
+
+include mixins.pug
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(name="description" content="Поиск номеров в отеле")
+    title #{page.title}
+    meta(name="format-detection" content="telephone=no")
+
+body
+  include header.pug
+  main
+    block content
+  include footer.pug
+  section.overlay
